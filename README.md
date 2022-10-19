@@ -42,6 +42,6 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/cybermaxi7)
-- Twitter - [@yourusername](https://www.twitter.com/cybermaxi7)
+- Frontend Mentor - [Cybermaxi7](https://www.frontendmentor.io/profile/cybermaxi7)
+- Twitter - [Cybermaxi7](https://www.twitter.com/cybermaxi7)
 
