@@ -1,0 +1,152 @@
+*,
+*::before *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-mainBg: hsl(233, 47%, 7%);
+  --color-cardBg: hsl(244, 38%, 16%);
+  --color-soft: hsl(277, 64%, 61%);
+  --color-heading: hsl(0, 0%, 100%);
+  --color-transparent1: hsla(0, 0%, 100%, 0.75);
+  --color-transparent2: hsla(0, 0%, 100%, 0.6);
+}
+html {
+  font-size: 95.75%;
+}
+
+body {
+  background-color: var(--color-mainBg);
+  font-family: "Lexend Deca", sans-serif;
+  font-family: "Inter" sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Inter", sans-serif;
+}
+p {
+  font-family: "Lexend Deca", sans-serif;
+}
+.container {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.left {
+  color: var(--color-heading);
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: .5rem;
+  background-color: var(--color-cardBg);
+  padding: 4rem;
+}
+.left__info h1 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.left__info h1 span {
+  color: var(--color-soft);
+}
+.left__info p {
+  color: var(--color-transparent1);
+  line-height: 1.5rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.row__component h2 {
+  font-family: "Inter" sans-serif;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.row__component p {
+  margin: 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: var(--color-transparent2);
+}
+
+.right {
+  width: 50%;
+  background-color: var(--color-soft);
+}
+.right img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  display: block;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+  object-fit: fill;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    margin: 0 auto 2rem auto;
+
+  }
+  .right {
+    width: fit-content;
+    height: auto;
+    order: -1;
+    background-color: var(--color-soft);
+  }
+  .right img {
+    width: 100%;
+    height: 100%;
+  }
+  .left {
+    order: 1;
+    width: fit-content;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    height: 60%;
+  }
+ 
+  .left__info h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+  }
+
+  .left__info p {
+    line-height: 1.5rem;
+    font-size: .8rem;
+    
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .row__component h2 {
+
+    padding-right: 0;
+  }
+  
+}
