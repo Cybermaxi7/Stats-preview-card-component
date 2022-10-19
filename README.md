@@ -20,8 +20,8 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop version](./images/image-header-desktop.jpg.jpg)
-![mobile version](./images/image-header-mobile.jpg.jpg)
+![desktop version](./images/image-header-desktop.jpg)
+![mobile version](./images/image-header-mobile.jpg)
 
 
 
